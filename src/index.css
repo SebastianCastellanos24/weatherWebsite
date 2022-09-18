@@ -1,0 +1,45 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(180deg, rgb(151, 217, 255) 0%, rgba(0,148,235,1) 100%);
+}
+
+input {
+    position: absolute;
+    width: 260px;
+    height: 33px;
+    outline: none;
+    border: 1px solid rgb(153, 209, 255);
+    background-color: #eff;
+    padding: 15px;
+    font-size: 20px;
+    color: rgb(0, 125, 197);
+    top: 5vh;
+    transform: translate(-50%, 50%);
+    font-weight: bold;
+}
+
+table {
+    color: rgb(0, 125, 197);
+    width: 210px;
+    font-size: 17px;
+}
+
+th {
+    padding: 0.6vh;
+    text-align: left;
+    color: rgb(0, 125, 197);
+}
+
+td {
+    width: 79px;
+}

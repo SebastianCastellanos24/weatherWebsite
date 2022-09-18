@@ -1,0 +1,23 @@
+import { WeatherData } from "../interfaces/WeatherData"
+
+export const DegreeSection = ({ data: {temperature, description, icon}} : 
+{ 
+    data : WeatherData;
+}) => {
+    return (
+        <>
+            <section className='text-5xl font-bold text-sky-600'>
+                <span className='text-sky-600' id='temperature'>
+                    {temperature}
+                </span>
+                °C
+            </section>
+            <section>
+                <img id='iconImg' src={icon} />
+            </section>
+            <section className='font-bold uppercase text-xl text-sky-600 mb-6' id='description'>
+                {description}
+            </section>
+        </>
+    )
+}
